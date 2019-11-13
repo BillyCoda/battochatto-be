@@ -3,7 +3,7 @@ package io.billycoda.battochatto.services;
 import io.billycoda.battochatto.models.Feedback;
 import io.billycoda.battochatto.models.User;
 import io.billycoda.battochatto.repositories.FeedbackRepository;
-import io.billycoda.battochatto.repositories.UserRespository;
+import io.billycoda.battochatto.repositories.UserRepository;
 import io.billycoda.battochatto.validators.FeedbackValidator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,7 +25,7 @@ public class FeedbackServiceImpl implements FeedbackService {
     @Autowired
     private FeedbackRepository feedbackRepository;
     @Autowired
-    private UserRespository userRepository;
+    private UserRepository userRepository;
     private User user;
     private static final Logger logger = LogManager.getLogger(FeedbackServiceImpl.class.getName());
     private Feedback feedback;

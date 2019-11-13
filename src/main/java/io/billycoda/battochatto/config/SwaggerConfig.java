@@ -42,7 +42,7 @@ public class SwaggerConfig {
                 .apiInfo(apiInfo())
                 .pathMapping("/")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("battochatto"))
+                .apis(RequestHandlerSelectors.basePackage("io.billycoda.battochatto"))
                 .build();
     }
 }
